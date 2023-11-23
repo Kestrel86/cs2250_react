@@ -9,6 +9,6 @@ import API from "./pages/API";
 const root = createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
-    <App />
+    <API />
   </StrictMode>
 );
