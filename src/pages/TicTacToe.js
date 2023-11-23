@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Navbar from "../components/Navbar";
 
 function Square({ value, onSquareClick }) {
   return (
@@ -32,6 +33,7 @@ function Board({ xIsNext, squares, onPlay }) {
 
   return (
     <>
+      <Navbar />
       <div className="status">{status}</div>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />

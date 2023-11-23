@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Navbar from "../components/Navbar.js";
 import pug from "../assets/pug404.jpg"; //meant to act as a placeholder alt image/ loading image
 
 export default function API() {
@@ -19,6 +20,7 @@ export default function API() {
   return (
     <>
       <div className="API">
+        <Navbar />
         <h1>Random Cute Dog Picture</h1>
         <img
           src={items.message || pug}
